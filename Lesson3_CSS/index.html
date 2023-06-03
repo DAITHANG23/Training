@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson3: CSS</title>
+    <style>
+        body{
+            background-color: #849FFF;
+        }
+        .card-reputation{
+            color: red;
+        }
+        .card-new-user{
+            color: blue;
+            font-size: 20px;
+        }
+        #card-reputation{
+            color: green;
+
+        }
+    </style>
+</head>
+<body>
+        <!-- Style inline -->
+        <!-- <h1 style="color: red; font-size: 20px; font-weight: bold; ">Bài học CSS</h1>
+        <p style="font-size: 50px; font-weight: 700; border: 1px solid rgb(255, 33, 4);">học bài css</p> -->
+
+        <h1>Users</h1>
+        <div style="display: flex; gap: 152px;">
+            <div style="position: relative;">
+                <img src="./images/Frame.png" style="width: 32px; height: 32px; position: absolute; top: 13px; left: 10px;">
+                <input style="padding: 20px 156px 20px 56px ;" type="text" placeholder="Search users">
+            </div>
+            
+            <div>
+                <span style="color: blueviolet;" id="card-reputation" class="card-reputation">Reputation</span><span class="card-new-user">New User</span><span class="card-reputation">Voters</span><span>Editors</span><span class="card-new-user">Moderators</span>
+            </div>
+        </div>
+
+</body>
+</html>
