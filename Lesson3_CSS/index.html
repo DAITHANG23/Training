@@ -1,43 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lesson3: CSS</title>
     <style>
-        body{
-            background-color: #849FFF;
+        strong {
+            color: yellowgreen;
         }
-        .card-reputation{
+
+        div {
+            margin-bottom: 24px;
+            padding: 24px;
+        }
+
+        .title-product {
+            font-size: 24px;
+            font-weight: 700;
             color: red;
+
         }
-        .card-new-user{
-            color: blue;
+
+        .product-item p:nth-child(2) {
+            color: blueviolet;
             font-size: 20px;
         }
-        #card-reputation{
-            color: green;
-
-        }
     </style>
-</head>
-<body>
-        <!-- Style inline -->
-        <!-- <h1 style="color: red; font-size: 20px; font-weight: bold; ">Bài học CSS</h1>
-        <p style="font-size: 50px; font-weight: 700; border: 1px solid rgb(255, 33, 4);">học bài css</p> -->
 
-        <h1>Users</h1>
-        <div style="display: flex; gap: 152px;">
-            <div style="position: relative;">
-                <img src="./images/Frame.png" style="width: 32px; height: 32px; position: absolute; top: 13px; left: 10px;">
-                <input style="padding: 20px 156px 20px 56px ;" type="text" placeholder="Search users">
-            </div>
-            
-            <div>
-                <span style="color: blueviolet;" id="card-reputation" class="card-reputation">Reputation</span><span class="card-new-user">New User</span><span class="card-reputation">Voters</span><span>Editors</span><span class="card-new-user">Moderators</span>
-            </div>
+    <!-- external CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,700;1,100;1,200;1,300;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <!-- link cdn icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- inline css -->
+    <div class="container">
+        <h1 style="color: red; background-color: grey; text-align: center; border-radius: 12px; padding: 24px;"
+            class="title">Lesson 03: CSS</h1>
+
+        <div class="product-item" style="border: 1px black solid; ; line-height: 20px;">
+            <p class="title-product">Iphone 12 Promax</p>
+            <p style="padding-left: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sequi
+                esse repellat praesentium, expedita asperiores quasi? Sit, exercitationem reiciendis? Accusamus rem esse
+                iste aliquam distinctio nulla et soluta recusandae quaerat!</p>
+            <p><strong>Price:</strong> 120$</p>
         </div>
 
+        <div style="border: 1px #d0011b dashed;">
+            <p class="title-product">Iphone 13</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sequi esse repellat praesentium,
+                expedita asperiores quasi? Sit, exercitationem reiciendis? Accusamus rem esse iste aliquam distinctio
+                nulla et soluta recusandae quaerat!</p>
+            <p><strong>Price:</strong> 120$</p>
+        </div>
+
+        <div style="border: 1px green solid ;">
+            <p class="title-product">Iphone 11 Promax</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sequi esse repellat praesentium,
+                expedita asperiores quasi? Sit, exercitationem reiciendis? Accusamus rem esse iste aliquam distinctio
+                nulla et soluta recusandae quaerat!</p>
+            <p><strong>Price:</strong> 120$</p>
+        </div>
+
+        <div style="border: 1px red solid ;">
+            <p class="title-product">Samsung Galaxy</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sequi esse repellat praesentium,
+                expedita asperiores quasi? Sit, exercitationem reiciendis? Accusamus rem esse iste aliquam distinctio
+                nulla et soluta recusandae quaerat!</p>
+            <p><strong>Price:</strong> 120$</p>
+        </div>
+
+        <h2>Các nước Đông Nam Á</h2>
+        <p class="country vietnam" id="thailan">VietNam</p>
+        <p style="color: #d0011b;" class="country" id="thailan">ThaiLan</p>
+        <p class="country">Lao</p>
+        <p class="country">Campuchia</p>
+        <p class="country">Myanmar</p>
+    </div>
+    <div class="icon">
+        <i class="fa-solid fa-user"></i>
+    </div>
+    
+
 </body>
+
 </html>
+
+<!-- class < id < inline css < !important -->
+<!-- inline css > internal css > external css -->
