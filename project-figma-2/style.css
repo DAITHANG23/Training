@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  margin: 0 70px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
