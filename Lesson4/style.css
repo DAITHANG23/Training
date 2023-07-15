@@ -33,8 +33,9 @@ body{
 
 .style-cha{
     display: flex;
-     justify-content: center; 
-     flex-direction: column-reverse;
-     align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    
     
 }
