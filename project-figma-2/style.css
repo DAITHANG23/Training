@@ -130,6 +130,9 @@ body {
   border-radius: 8px;
   border: none;
   margin-right: 25px;
+  box-shadow: 0px 0px 64px 0px #b000004d;
+  cursor: pointer;
+  transition: all 0.7s;
 }
 
 .btn-hero .btn-2 {
@@ -138,11 +141,51 @@ body {
   background-color: #fff;
   border-radius: 8px;
   border: 1px solid #000000;
+  cursor: pointer;
+  transition: all 0.7s;
+}
+.btn-hero .btn-1:hover,
+.btn-hero .btn-2:hover {
+  transform: scale(1.1);
 }
 .img-hero {
   width: 45%;
+  position: relative;
 }
-
 .img-hero img {
   width: 90%;
+  cursor: pointer;
+  transition: all 0.7s;
+}
+.img-hero img:hover {
+  transform: scale(1.1);
+}
+.triang-1 {
+  position: absolute;
+  top: 303px;
+  right: 507px;
+  border-bottom: 20px solid #b00000;
+  border-left: 20px solid #b00000;
+  border-right: 20px solid transparent;
+  border-top: 20px solid transparent;
+}
+
+.triang-2 {
+  position: absolute;
+  top: 63px;
+  left: 450px;
+  border-bottom: 20px solid #b00000;
+  border-right: 20px solid #b00000;
+  border-left: 20px solid transparent;
+  border-top: 20px solid transparent;
+}
+
+.triang-3 {
+  position: absolute;
+  top: 350px;
+  left: 410px;
+  border-bottom: 40px solid #b00000;
+  border-right: 40px solid #b00000;
+  border-left: 40px solid transparent;
+  border-top: 40px solid transparent;
 }
